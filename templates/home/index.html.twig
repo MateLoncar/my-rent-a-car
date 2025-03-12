@@ -6,5 +6,27 @@
     <div style="text-align: center; margin-top: 50px;">
         <h1>{{ title }}</h1>
         <p>{{ subtitle }}</p>
+
+        <div style="margin-top: 20px;">
+            <a href="{{ path('app_person_index') }}" class="btn">Manage People</a>
+            <a href="{{ path('app_vehicle_index') }}" class="btn">Manage Vehicles</a>
+            <a href="{{ path('app_rent_index') }}" class="btn">Manage Rentals</a>
+        </div>
     </div>
+
+    <style>
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 {% endblock %}
